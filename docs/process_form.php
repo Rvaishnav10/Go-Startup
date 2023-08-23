@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $email_subject, $email_message, $headers);
 
     // Redirect to a thank you page
-    // header("Location: thank_you.html");
-    echo "thank you your form is submitted";
+    header("Location: thankyou.html");
+    // echo "thank you your form is submitted";
 } else {
     // Handle form submission failure
     echo "Form submission failed.";
